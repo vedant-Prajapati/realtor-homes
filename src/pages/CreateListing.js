@@ -99,7 +99,7 @@ export default function CreateListing() {
 
       location = data.status === "ZERO_RESULTS" && undefined;
 
-      if (location === undefined) {
+      if (location === undefined) { 
         setLoading(false);
         toast.error("please enter a correct address");
         return;
@@ -391,7 +391,7 @@ export default function CreateListing() {
                 <div className="">
                   <p className="text-md w-full whitespace-nowrap">$ / Month</p>
                 </div>
-              )}
+               )}
             </div>
           </div>
         </div>
@@ -443,6 +443,6 @@ export default function CreateListing() {
           Create Listing
         </button>
       </form>
-    </main> 
+    </main>
   );
 }
